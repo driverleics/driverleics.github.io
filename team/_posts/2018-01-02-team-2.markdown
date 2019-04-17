@@ -1,0 +1,11 @@
+---
+title: Dr
+name: Rayna Dimitrova
+subtitle: Lecturer
+layout: default
+img: rayna.jpg
+thumbnail: rayna.jpg
+alt: Rayna Dimitrova
+website: https://raynadimitrova.github.io/
+description: Blah blah blah
+---

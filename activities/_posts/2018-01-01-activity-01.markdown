@@ -1,0 +1,15 @@
+---
+title: Building trust
+name: activity-01
+layout: default
+img: activity1.jpg
+thumbnail: activity1.jpg
+alt: Building trust
+website:
+topic: >
+ Position
+abstract: >
+ Building trust is an important challenge in bringing autonomous vehicles to our roads.
+bio: >
+ Bio
+---

@@ -1,0 +1,11 @@
+---
+title: Dr
+name: Nervo Verdezoto​
+subtitle: Lecturer
+layout: default
+img: nervo.jpg
+thumbnail: nervo.jpg
+alt: Nervo Verdezoto​
+website: https://nervoxavier.wordpress.com/
+description: Blah blah blah
+---

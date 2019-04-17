@@ -1,0 +1,12 @@
+---
+title: Safety
+name: activity-03
+layout: default
+img: activity3.jpg
+thumbnail: activity3.jpg
+alt: Safety
+website:
+topic: Role
+abstract: >
+ Artificial intelligence provides an automated way of assessing and improving safety for trusted autonomous vehicles.
+---

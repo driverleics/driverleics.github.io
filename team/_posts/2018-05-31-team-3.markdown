@@ -1,0 +1,11 @@
+---
+title: Dr
+name: José Miguel Rojas
+subtitle: Lecturer
+layout: default
+img: jose.jpg
+thumbnail: jose.jpg
+alt: José Miguel Rojas
+website: http://jmrojas.github.io
+description: Blah blah blah
+---

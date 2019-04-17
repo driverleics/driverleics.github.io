@@ -1,0 +1,12 @@
+---
+title: Basic, explainable AV principles
+name: activity-02
+layout: default
+img: activity2.jpg
+thumbnail: activity2.jpg
+alt: Activity 2
+website:
+topic: Role
+abstract: >
+ The behaviour of autonomous vehicles follows basic, explainable principles.
+---

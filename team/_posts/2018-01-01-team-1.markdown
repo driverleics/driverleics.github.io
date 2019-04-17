@@ -1,0 +1,11 @@
+---
+title: Dr
+name: Jan Oliver Ringert
+subtitle: Lecturer / Team Leader
+layout: default
+img: jan.jpg
+thumbnail: jan.jpg
+alt: Jan Ringert
+website: https://www2.le.ac.uk/departments/informatics/people/jan-oliver-ringert
+description: Blah blah blah
+---
