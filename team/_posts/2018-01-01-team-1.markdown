@@ -6,6 +6,6 @@ layout: default
 img: jan.jpg
 thumbnail: jan.jpg
 alt: Jan Ringert
-website: https://www2.le.ac.uk/departments/informatics/people/jan-oliver-ringert
+website: https://ringert.blogspot.com
 description: Blah blah blah
 ---
