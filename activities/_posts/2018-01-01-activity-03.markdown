@@ -2,8 +2,8 @@
 title: Safety
 name: activity-03
 layout: default
-img: activity3.jpg
-thumbnail: activity3.jpg
+img: testing_1600.jpg
+thumbnail: testing_1600.jpg
 alt: Safety
 website:
 topic: Role
