@@ -1,3 +1,5 @@
-Time,Title,Authors,Type
-Blah,Blah
-Blah,Blah
+Time,Title,Authors,Type, Content
+Year,Project
+2018,Testing AI Pedestrian Detection, Jan Ringert
+2018, Formula Student Artificial Intelligence (FS-AI) in Siverstone,Jan Ringert & Jose MIguel Rojas,
+2018,Audi Autonomous Driving Cup,Jan Ringert & Jose MIguel Rojas,Developmental Programme,

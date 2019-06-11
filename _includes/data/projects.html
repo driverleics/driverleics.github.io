@@ -4,16 +4,48 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h4 class="section-subheading">-Formula Student Artificial Intelligence (FS-AI) in Siverstone</h4>
+				</div>
+			</div>
+			<div class="row container">
+				<center>
+					<p><span>In 2018, July 11th to 15th were big days for student teams from all over the world: the Formula Student UK competition took place at the Silverstone race track.
+						For the first time in history these dates were also big days for some artificial intelligence (AI) drivers. The organizers had announced that for the 20th anniversary of the Formula Student competition there would be a special track for AI drivers, the first FS-AI UK.
+A team of five students and academic advisers from the University of Leicester went to Silverstone to participate in the event. This year our FS-AI team would only in an observational capacity to talk to the thousands of students from more than a hundred UK and international teams. Teams brought their expertise and cars from the United States, Mexico, Egypt, and Australia to name a few.
+					<p><span>The main focus of Formula Student is to provide an engineering competition for teams that are completely run by students. Students learn how to organize themselves and how to maintain effective teams over years. Most teams include students from as early as their first year of studies. It turns out that many of the successful teams have members from different departments and schools of their university. Business, finances, and management are some of the skills needed by larger teams that raise their own funds and cooperate with local industries. </span></p>
+					<img src="../css/style/img/projects/formula1.JPG" width="34.5%" height="34.5%" alt=""></img>
+					<img src="../css/style/img/projects/DSC_0680.JPG" width="40.5%" height="40.5%" alt=""></img>
+				</center>
+			</div>
+	</section>
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+
+					<h4 class="section-subheading">-Audi Autonomous Driving Cup </h4>
                 </div>
 	    </div>
+<div class="row container">
+	<center>
+		<p><span>The Audi Autonomous Cup is a contest aimed at students of Computer Science, Electrical Engineering, Mechanical Engineering or Similar STEM Disciplines. The contest involves the participating teams developing fully automatic driving functions and the necessary software architectures. The hardware platform used is a 1:8 model vehicle developed by Audi specifically for the contest.
+In 2018, the DriverLeics team representing university of Leicester had successfully tackled the first hurdle of the Audi autonomous driving cup having being selected as one of the 10 teams from applications made from universities all across Europe.  </span></p>
+		<p><span>The picture on the left indicates our team of four PhD students and one MSc student together with their coaches Jose (left), Mohammad (behind the camera) and jan (right). The group picture was taken with a race car built by students of our Engineering department.  </span></p>
+		<img src="../css/style/img/projects/teamPhoto.jpg" width="35%" height="35%" alt=""></img>
+		<img src="../css/style/img/projects/audi.jpg" width="43%" height="43%" alt=""></img>
+	       </center>
+        </div>
+	</div>
+		<p><section>
+	    </section>
+			<center>
             <div class="row">
 	    	 <table class="program-table">
 	    {% for member in site.data.projects %}
 			<tr valign="baseline">
 				<td class="program-time">{{ member.Time }}.</td>
         	        	<td>
-					<p class="paper-title">{{ member.Title }}.</p><br>
+					<h4 class="paper-title">{{ member.Title }}.</h4><br>
 					<p class="paper-authors">{% if member.Authors %}{{ member.Authors }}.{% endif %}</p>
 				</td>
 			</tr>
@@ -21,4 +53,5 @@
 	    	</table>
 	    </div>
         </div>
+</section>
     </section>
