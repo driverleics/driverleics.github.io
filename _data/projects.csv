@@ -1,5 +1,8 @@
-Time,Title,Authors,Type, Content
-Year,Project
-2018,Testing AI Pedestrian Detection, Jan Ringert
-2018, Formula Student Artificial Intelligence (FS-AI) in Siverstone,Jan Ringert & Jose MIguel Rojas,
-2018,Audi Autonomous Driving Cup,Jan Ringert & Jose MIguel Rojas,Developmental Programme,
+Time,Title,Authors,Type,Content
+,Project
+Fields of Research,Testing and safety analysis of connected and autonomous vehicles, Mohammad Mousavi
+Contribution to project ,Using conformance testing to assess the safety of autonomous vehicle controllers, Mohammad Mousavi
+Fields of Research, Software engineering| Automated software testing| Search-based software engineering, Jose MIguel Rojas,
+Contribution to project ,Academic support, Jose MIguel Rojas
+Fields of Research,Software testing| Model-Based Testing| Active Model Learning| Software Product Lines, Diego Damasceno
+Contribution to project ,Using adaptive learning to improve behavioral models, Diego Damasceno
