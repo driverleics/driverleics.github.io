@@ -2,8 +2,8 @@
 title: Safety
 name: activity-03
 layout: default
-img: testing_1600.jpg
-thumbnail: testing_1600.jpg
+img: callumdriving.jpg
+thumbnail: callumdriving.jpg
 alt: Safety
 website:
 topic: Role

@@ -2,8 +2,8 @@
 title: Building trust
 name: activity-01
 layout: default
-img: TBD.jpg
-thumbnail: TBD.jpg
+img: uolcar.jpg
+thumbnail: uolcar.jpg
 alt: Building trust
 website:
 topic: >
