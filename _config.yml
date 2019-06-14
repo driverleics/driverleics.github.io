@@ -38,6 +38,7 @@ include: ['_pages']
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - pagemaster
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 #social:
@@ -49,3 +50,10 @@ plugins:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  scientists:
+    output: true
+    source: score.csv
+    id_key: id
+    layout: score
