@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+
+    {%include /css/style.css%} /*This is the important line that includes the css format.*/
+</style>
+<link rel="stylesheet" href="style.css"> <!--As far as I know this does nothing and can be removed. -->
+
+<<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading">DriverLeics-Your Score<br></div> <!--Title of the page-->
+            <div class="intro-subheading">University of Leicester</div> <!--subtext-->
+            <div class="intro-lead-in"><br></div>
+            <!--<a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>-->
+           <!-- This is just to get the header in place and so that it is cohesive with the whole website.-->
+        </div>
+    </div>
+</header>
+<center><h1>Explanation</h1><center>
+
+    <p><span>Your id is: {{page.id}}.<span><p>
+    <p><span>Thank you for visiting us at the Royal Society Exhibition. Where your driving capabilities where put to the test in complex urban scenarios.
+    <p>The objective of the simualtor was to show you how generating such scenarios could be a viable manner to asses the safety of autonomous driving vehicles.</p>
+    <p>It was a pleasure seeing you and we hope you enjoyed it. <span><p> <!--Text with a bit of explanation-->
+    <p><span>Your score is: <strong>{{page.number}}</strong></span></p>
+    <!--We used pagemaster to generate these pages. It is important when making changes in the csv file.
+    To either delete scientist and then run bundle exec jekyll pagemaster scientists.
+    Or to change the specific md file. Changes from the csv file are not automatic. -->
+
+
+
+
+
+    <br><p><h2>Memorable moments</h2></p></br>
+    <img src="../royal_snapshot/{{page.imageid}}" width="40%" height="40%" alt="Unfortunately we couldn't provide a picture"></img>
+    <!--Pics need to be added to the the scientist directory,the in royal_snapshot.
+     This is for the pics. -->
+    <img src="../royal_snapshot/{{page.gifid}}" width="40%" height="40%" alt="Unfortunately we couldn't provide a picture"></img>
+    <!--It is important that the pics is there. Text in curly bracker refers to the score.csv.
+    Which refers to the an image that should be saved in roayl_snapshots unless you change the path. This one is for teh gif.-->
+
+    <!--The important fils/dir to consider here are:
+    css files.
+    score csv.=where the user id,there snapshot and gif will be ided.
+    scientists dir is where the md are generated.
+    score html=is the actual layout if you want anything to get changed.
+    scientist->royal_snapshot is where all the gif/pics should be collected in. -->
