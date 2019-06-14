@@ -1,9 +1,9 @@
 ---
-title: Basic, explainable AV principles
+title: Basic, Explainable AI Components
 name: activity-02
 layout: default
-img: principles_1600.jpg
-thumbnail: principles_1600.jpg
+img: reynaholding.jpg
+thumbnail: reynaholding.jpg
 alt: Activity 2
 website:
 topic: Role
