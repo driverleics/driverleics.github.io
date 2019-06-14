@@ -1,0 +1,11 @@
+---
+title: Dr
+name: Genovefa Kefalidou
+subtitle: Lecturer
+layout: default
+img: genovefa.jpg
+thumbnail: genovefa.jpg
+alt: Genovefa Kefalidou
+website: https://www2.le.ac.uk/departments/informatics/people/kefalidou
+description: Blah blah blah
+---
