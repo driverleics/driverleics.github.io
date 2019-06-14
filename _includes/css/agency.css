@@ -334,12 +334,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-header {header {
-    height: 100vh;
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.
+header {
     height: 100vh;
     text-align: center;
     color: #fff;
