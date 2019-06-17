@@ -52,7 +52,7 @@ markdown: kramdown
 permalink: pretty
 
 collections:
-  scientists:
+  scores:
     output: true
     source: score.csv
     id_key: id
