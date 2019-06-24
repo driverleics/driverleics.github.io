@@ -24,40 +24,22 @@
 
     <script>
         $(document).ready( function () {
-            $('#theScoreboard').DataTable(
-                    { language: {
-                        searchPlaceholder: "Search ID",
-                        search: "",
+          const params = new URLSearchParams(location.search)
+          id_to_search = ""
+
+          if (params.has('id')) {
+            id_to_search = params.get('id')
+          }
+
+          $('#theScoreboard').DataTable(
+                    { oSearch: {"sSearch": id_to_search},
+                      language: {
+                        searchPlaceholder: "Search records",
+                        search: "Search your ID",
                       }
                     }
             );
         } );
-
-
-
-        // $(document).ready(function() {
-        //   // Setup - add a text input to each footer cell
-        //   $('#theScoreboard tfoot th').each( function () {
-        //     var title = $(this).text();
-        //     $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-        //   } );
-        //
-        //   // DataTable
-        //   var table = $('#theScoreboard').DataTable();
-        //
-        //   // Apply the search
-        //   table.columns().every( function () {
-        //     var that = this;
-        //
-        //     $( 'input', this.footer() ).on( 'keyup change', function () {
-        //       if ( that.search() !== this.value ) {
-        //         that
-        //                 .search( this.value )
-        //                 .draw();
-        //       }
-        //     } );
-        //   } );
-        // } );
     </script>
 
     {% include /data/header.html %}
