@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+  </head>>
+
+  <style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+    {% capture criticalcss %}
+      {% include /css/critical.scss %}
+    {% endcapture %}
+    {{ criticalcss | scssify }}
+  </style>
+  
+  {% include /data/js.html %}
+  {% include /data/head.html %}
+
+  <body>
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#theScoreboard').DataTable(
+                    { language: {
+                        searchPlaceholder: "Search ID",
+                        search: "",
+                      }
+                    }
+            );
+        } );
+
+
+
+        // $(document).ready(function() {
+        //   // Setup - add a text input to each footer cell
+        //   $('#theScoreboard tfoot th').each( function () {
+        //     var title = $(this).text();
+        //     $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+        //   } );
+        //
+        //   // DataTable
+        //   var table = $('#theScoreboard').DataTable();
+        //
+        //   // Apply the search
+        //   table.columns().every( function () {
+        //     var that = this;
+        //
+        //     $( 'input', this.footer() ).on( 'keyup change', function () {
+        //       if ( that.search() !== this.value ) {
+        //         that
+        //                 .search( this.value )
+        //                 .draw();
+        //       }
+        //     } );
+        //   } );
+        // } );
+    </script>
+
+    {% include /data/header.html %}
+        {{ content }}
+  </body>
+  {% include /data/footer.html %}
+</html>

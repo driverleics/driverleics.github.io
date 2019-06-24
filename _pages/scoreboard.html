@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: scoreboard
 permalink: /scoreboard
 title: Scoreboard
 published: true
@@ -16,34 +16,38 @@ published: true
 <!--        </div>-->
 <!--    </div>-->
 <!--</header>-->
-
-
-    <table class="agenda" style="width:50%" align="center">
-        <colgroup>
-            <col width="5%" />
-            <col width="12%" />
-            <col width="20%" />
-            <col width="10%" />
-        </colgroup>
-        <thead>
-            <tr>
-                <th ><center>Place</center></th>
-                <th><center>ID</center></th>
-                <th><center>Timestamp</center></th>
-                <th><center>Score</center></th>
-            </tr>
-        </thead>
-        <tbody>
-            {% assign score_sorted = site.data.score | sort: 'finalScore' | reverse  %}
-            {% for ai in score_sorted  %}
+    <center>
+    <div class="table-container" style="width: 50%">
+        <table id="theScoreboard" class="display">
+            <colgroup>
+                <col width="5%" />
+                <col width="12%" />
+                <col width="20%" />
+<!--                <col width="10%" />-->
+            </colgroup>
+            <thead>
                 <tr>
-                    <td markdown="span"><center>{{ forloop.index}} </center></td>
-                    <td markdown="span"><center>{{ ai.id }} </center></td>
-                    <td markdown="span" ><center><a href="../scores/{{ai.timestamp}}"> {{ ai.timestamp }} </a></center></td>
-                    <td markdown="span"><center>{{ ai.finalScore }} </center></td>
+                    <th ><center>Place</center></th>
+                    <th><center>ID</center></th>
+<!--                    <th><center>Timestamp</center></th>-->
+                    <th><center>Score</center></th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                {% assign score_sorted = site.data.score | sort: 'finalScore' | reverse  %}
+                {% for ai in score_sorted  %}
+                    <tr>
+                        <td markdown="span"><center>{{ forloop.index}} </center></td>
+<!--                        <td markdown="span"><center>{{ ai.id }} </center></td>-->
+                        <td markdown="span" ><center><a href="../scores/{{ai.timestamp}}"> {{ ai.timestamp }} </a></center></td>
+                        <td markdown="span"><center>{{ ai.finalScore }} </center></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+    </center>>
+
 
 </html>
