@@ -35,7 +35,7 @@ published: true
         </thead>
         <tbody>
             {% assign score_sorted = site.data.score | sort: 'finalScore' | reverse  %}
-            {% for ai in score_sorted | limit: 20 %}
+            {% for ai in score_sorted  %}
                 <tr>
                     <td markdown="span"><center>{{ forloop.index}} </center></td>
                     <td markdown="span"><center>{{ ai.id }} </center></td>
