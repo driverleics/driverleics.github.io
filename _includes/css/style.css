@@ -1012,3 +1012,17 @@ body {
 {
     padding:0 0 0 7px;
 }
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.sponsor-centered {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}

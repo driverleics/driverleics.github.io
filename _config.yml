@@ -18,7 +18,7 @@ title: DriverLeics
 description: > # this means to ignore newlines until "baseurl:"
   DriverLeics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "mutation-workshop.github.io" # the base hostname & protocol for your site
+url: "driverleics.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 future: true
