@@ -25,20 +25,34 @@
     <script>
         $(document).ready( function () {
           const params = new URLSearchParams(location.search)
-          id_to_search = ""
 
-          if (params.has('id')) {
-            id_to_search = params.get('id')
-          }
-
-          $('#theScoreboard').DataTable(
-                    { oSearch: {"sSearch": id_to_search},
+          var table = $('#theScoreboard').DataTable(
+                    { oSearch: {"sSearch": ""},
                       language: {
                         searchPlaceholder: "Search records",
                         search: "Search your ID",
+                        rowId: "id"
                       }
                     }
             );
+
+          if (params.has('id')) {
+            if (!(params.get('id') === '')) {
+
+              place = 0
+              for (i = 0; i < table.column(1).data().length ; i++) {
+                str = String(table.column(1).data()[i]);
+                if (String(str.substring(str.indexOf("\"")+11, str.lastIndexOf("\""))).trim() === String(params.get('id').trim())) {
+                  place = i;
+                }
+              }
+
+              page_to_display = Math.floor( place / 10 );
+              table.page( page_to_display).draw( 'page' );
+
+            }
+          }
+
         } );
     </script>
 
