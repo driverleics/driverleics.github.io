@@ -39,7 +39,7 @@ published: true
                 <tr>
                     <td markdown="span"><center>{{ forloop.index}} </center></td>
                     <td markdown="span"><center>{{ ai.id }} </center></td>
-                    <td markdown="span"><center>{{ ai.timestamp }} </center></td>
+                    <td markdown="span" ><center><a href="../scores/{{ai.timestamp}}"> {{ ai.timestamp }} </a></center></td>
                     <td markdown="span"><center>{{ ai.finalScore }} </center></td>
                 </tr>
             {% endfor %}
