@@ -1,6 +1,6 @@
 ---
-layout: scoreboard
-permalink: /scoreboard
+layout: s
+permalink: /s
 title: Scoreboard
 published: true
 ---
@@ -17,7 +17,7 @@ published: true
                 <col width="5%" />
                 <col width="5%" />
                 <col width="12%" />
-                <col width="20%" />
+                <col width="15%" />
                 <col width="0%" />
                 <col width="0%" />
                 <col width="0%" />
@@ -31,7 +31,7 @@ published: true
                 <tr>
                     <th></th>
                     <th><center>Place</center></th>
-                    <th><center>ID</center></th>
+                    <th><center>Driver</center></th>
                     <th><center>Score</center></th>
                     <th style="display: none"><center>Scenario Name</center></th>
                     <th style="display: none"><center>Time Elapsed</center></th>
@@ -48,9 +48,9 @@ published: true
 
                     <tr>
                         <td class="details-control">
-                        <td ><center>{{ forloop.index}}</center></td>
-                        <td ><center>{{ driver.id }}</center></td>
-                        <td ><center>{{ driver.finalScore }}</center></td>
+                        <td align="center">{{ forloop.index}}</td>
+                        <td align="center">{{ driver.timestamp }}</td>
+                        <td align="center">{{ driver.finalScore }}</td>
                         <td style="display: none">{{ driver.scenario }}</td>
                         <td style="display: none">{{ driver.timeElapsed }}</td>
                         <td style="display: none">{{ driver.routeCompleted }}</td>

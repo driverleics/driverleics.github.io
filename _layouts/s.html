@@ -77,6 +77,12 @@
                 '<td>Red lights crossed:</td>'+
                 '<td>'+d[10]+'</td>'+
                 '</tr>'+
+                '<tr>'+
+                '<td>Snapshots:</td>'+
+                '<td>'+
+                '<img src="./activities/snapshots/snap'+d[2]+'.gif" width="40%" height="40%" alt="Unfortunately we couldn\'t provide a picture"></img>' +
+                '</td>'+
+                '</tr>'+
                 '</table>' +
                 '<br>'+
                 '<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" ' +
@@ -99,8 +105,8 @@
           iDisplayLength: initialEntries,
           language: {
             searchPlaceholder: "Search records",
-            search: "Search your ID",
-            rowId: "id"
+            // search: "Search your ID",
+            // rowId: "Driver"
           },
           "columnDefs": [
             { "orderable": false, "targets": 0 }
@@ -122,10 +128,10 @@
           }
         } );
 
-        if (params.has('id')) {
-          if (!(params.get('id') === '')) {
+        if (params.has('i')) {
+          if (!(params.get('i') === '')) {
 
-            idValue = String(params.get('id')).trim()
+            idValue = String(params.get('i')).trim()
             place = 0
 
             // Find the correct Page
