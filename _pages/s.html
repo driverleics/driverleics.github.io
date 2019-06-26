@@ -10,14 +10,14 @@ published: true
     <div class="intro-subheading">University of Leicester</div> <!--subtext-->
     <div class="intro-lead-in"><br><br><br></div>
 
-    <center>
-    <div class="table-container" style="width: 50%">
-        <table id="theScoreboard" class="display">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <table id="theScoreboard" class="row">
             <colgroup>
                 <col width="5%" />
                 <col width="5%" />
                 <col width="12%" />
-                <col width="20%" />
+                <col width="12%" />
                 <col width="0%" />
                 <col width="0%" />
                 <col width="0%" />
@@ -49,7 +49,7 @@ published: true
                     <tr>
                         <td class="details-control">
                         <td align="center">{{ forloop.index}}</td>
-                        <td align="center">{{ driver.timestamp }}</td>
+                        <td align="center">{{ driver.id }}</td>
                         <td align="center">{{ driver.finalScore }}</td>
                         <td style="display: none">{{ driver.scenario }}</td>
                         <td style="display: none">{{ driver.timeElapsed }}</td>
@@ -64,7 +64,6 @@ published: true
 
         </table>
     </div>
-    </center>>
 
 
 </html>
