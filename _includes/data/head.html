@@ -4,6 +4,13 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@DriverLeics" />
+    <meta name="twitter:creator" content="@DriverLeics" />
+    <meta property="og:url" content="http://driverleics.github.io/" />
+    <meta property="og:title" content="DriverLeics" />
+    <meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />
+    <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     {% seo %}
