@@ -1,5 +1,5 @@
 ---
-title: Building trust
+title: Building Trust
 name: activity-01
 layout: default
 img: uolcar.jpg
