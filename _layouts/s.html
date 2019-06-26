@@ -42,7 +42,7 @@
 
       function format ( d ) {
         // `d` is the data the row
-        urlToShare = "https://driverleics.github.io/s?i=" + String(d[2])
+        urlToShare = "https://driverleics.github.io/s?i="+String(d[2])
         console.log(urlToShare)
         return  '<center>' +
                 '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
@@ -85,10 +85,10 @@
                 // '</tr>'+
                 '</table>' +
                 '<br>'+
+                '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></scr'+'ipt>' +
                 '<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="small" ' +
                 'data-text="Check out my score!" data-url='+urlToShare+' data-hashtags="driverleics" ' +
                 'data-via="DriverLeics" data-related="score, driverleics"> Tweet </a>' +
-                '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></scr'+'ipt>' +
                 '<!-- Load Facebook SDK for JavaScript -->\n' +
                 '  <div id="fb-root"></div>\n' +
                 '  <script>(function(d, s, id) {\n' +
