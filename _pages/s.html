@@ -43,7 +43,7 @@ published: true
                 </tr>
             </thead>
             <tbody>
-                {% assign score_sorted = site.data.score | sort: 'finalScore_sort' | reverse  %}
+                {% assign score_sorted = site.data.score | sort: 'finalScore_sort'  %}
                 {% for driver in score_sorted  %}
 
                     <tr>
