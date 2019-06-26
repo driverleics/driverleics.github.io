@@ -10,9 +10,9 @@ published: true
     <div class="intro-subheading">University of Leicester</div> <!--subtext-->
     <div class="intro-lead-in"><br><br><br></div>
 
-    <div class="container">
+    <div class="container" style="width: 50%">
         <h1>{{ page.title }}</h1>
-        <table id="theScoreboard" class="row">
+        <table id="theScoreboard" class="display">
             <colgroup>
                 <col width="5%" />
                 <col width="5%" />
@@ -43,16 +43,16 @@ published: true
                 </tr>
             </thead>
             <tbody>
-                {% assign score_sorted = site.data.score | sort: 'finalScore_sort' | reverse  %}
+                {% assign score_sorted = site.data.score | sort: 'finalScore_sort'  %}
                 {% for driver in score_sorted  %}
 
                     <tr>
                         <td class="details-control">
-                        <td align="center">{{ forloop.index}}</td>
+                        <td align="center">{{ forloop.index }}</td>
                         <td align="center">{{ driver.id }}</td>
                         <td align="center">{{ driver.finalScore }}</td>
                         <td style="display: none">{{ driver.scenario }}</td>
-                        <td style="display: none">{{ driver.timeElapsed }}</td>
+                        <td style="display: none">{{ driver.timeLeft }}</td>
                         <td style="display: none">{{ driver.routeCompleted }}</td>
                         <td style="display: none">{{ driver.collisions }}</td>
                         <td style="display: none">{{ driver.wrongLane }}</td>

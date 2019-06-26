@@ -4,5 +4,8 @@ permalink: robots.txt
 ---
 Sitemap: {{ site.url }}/sitemap.xml
 
+User-agent: Twitterbot
+Disallow:
+
 User-agent: *
 Disallow: /css
