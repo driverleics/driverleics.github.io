@@ -42,7 +42,7 @@
 
       function format ( d ) {
         // `d` is the data the row
-        urlToShare = "https://driverleics.github.io/scoreboard?id=" + String(d[2]).substring(d[2].indexOf(">")+1, d[2].lastIndexOf("<")).trim()
+        urlToShare = "https://driverleics.github.io/s?i=" + String(d[2])
         console.log(urlToShare)
         return  '<center>' +
                 '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
