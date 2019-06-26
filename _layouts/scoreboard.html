@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+    <style>
+      td.details-control {
+        background: url('../css/style/img/scoreboard_details_open.png') no-repeat center center;
+        cursor: pointer;
+      }
+      tr.shown td.details-control {
+        background: url('../css/style/img/scoreboard_details_close.png') no-repeat center center;
+      }
+    </style>
+
+    <meta name="twitter:image" content="'../css/style/img/poster.jpg'">
+
+
+  </head>>
+
+  <style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+    {% capture criticalcss %}
+      {% include /css/critical.scss %}
+    {% endcapture %}
+    {{ criticalcss | scssify }}
+  </style>
+  
+  {% include /data/js.html %}
+  {% include /data/head.html %}
+
+  <body>
+
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script>
+
+
+      function format ( d ) {
+        // `d` is the data the row
+        urlToShare = "https://driverleics.github.io/scoreboard?id=" + String(d[2]).substring(d[2].indexOf(">")+1, d[2].lastIndexOf("<")).trim()
+        console.log(urlToShare)
+        return  '<center>' +
+                '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+                '<tr>'+
+                '<td colspan="2" align="center">Score Breakdown</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Scenario name:</td>'+
+                '<td>'+d[4]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Time elapsed:</td>'+
+                '<td>'+d[5]+' seconds</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Percentage of route completed:</td>'+
+                '<td>'+d[6]+' %</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Number of collisions:</td>'+
+                '<td>'+d[7]+'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Distance driven in the wrong lane:</td>'+
+                '<td>'+d[8]+' meters</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Distance driven off track:</td>'+
+                '<td>'+d[9]+' meters</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Red lights crossed:</td>'+
+                '<td>'+d[10]+'</td>'+
+                '</tr>'+
+                '</table>' +
+                '<br>'+
+                '<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" ' +
+                'data-text="Check out my score!" data-url='+urlToShare+' data-hashtags="driverleics" ' +
+                'data-via="DriverLeics" data-related="score, driverleics"> Tweet </a>' +
+                '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></scr'+'ipt>' +
+
+                '</center>';
+      }
+
+      $(document).ready(function() {
+
+        const params = new URLSearchParams(location.search)
+
+        initialEntries = 10
+
+        var table = $('#theScoreboard').DataTable({
+          oSearch: {"sSearch": ""},
+          order: [[1,"asc"]],
+          iDisplayLength: initialEntries,
+          language: {
+            searchPlaceholder: "Search records",
+            search: "Search your ID",
+            rowId: "id"
+          },
+          "columnDefs": [
+            { "orderable": false, "targets": 0 }
+          ]
+        });
+
+        // Add event listener for opening and closing details
+        $('#theScoreboard tbody').on('click', 'td.details-control', function () {
+          var tr = $(this).closest('tr');
+          var row = table.row( tr );
+
+          if ( ! row.child.isShown() ) {
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+          }
+          else {
+            row.child.hide();
+            tr.removeClass('shown');
+          }
+        } );
+
+        if (params.has('id')) {
+          if (!(params.get('id') === '')) {
+
+            idValue = String(params.get('id')).trim()
+            place = 0
+
+            // Find the correct Page
+            for (i = 0; i < table.column(2).data().length ; i++) {
+              str = String(table.column(2).data()[i]);
+              str = str.substring(str.indexOf(">")+1, str.lastIndexOf("<")).trim();
+              if (str === idValue ) {
+                place = i;
+              }
+            }
+
+            page_to_display = Math.floor( place / initialEntries );
+            table.page( page_to_display).draw( 'page' );
+
+            // Find the correct Row
+            $("#theScoreboard tr").each(function() {
+                $row = $(this);
+                var id = String($row.find("td:nth-child(3)").text()).trim();
+                if (id === idValue) {
+                  $row.find("td:first").click();
+                  $row.find("td:first")[0].scrollIntoView();
+                  window.scrollBy(0,-70);
+                }
+            });
+          }
+        }
+      } );
+    </script>
+
+    {% include /data/header.html %}
+        {{ content }}
+  </body>
+  {% include /data/footer.html %}
+</html>

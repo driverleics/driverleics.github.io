@@ -1,49 +1,70 @@
 ---
-layout: default
+layout: scoreboard
 permalink: /scoreboard
 title: Scoreboard
 published: true
 ---
 
-<!--<header>-->
-<!--    <div class="container">-->
-<!--        <div class="intro-text">-->
-            <div class="intro-heading">Scoreboard<br></div> <!--Title of the page-->
-            <div class="intro-subheading">University of Leicester</div> <!--subtext-->
-            <div class="intro-lead-in"><br><br><br></div>
-            <!--<a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>-->
-<!--           &lt;!&ndash; This is just to get the header in place and so that it is cohesive with the whole website.&ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
 
+    <div class="intro-heading">Scoreboard<br></div> <!--Title of the page-->
+    <div class="intro-subheading">University of Leicester</div> <!--subtext-->
+    <div class="intro-lead-in"><br><br><br></div>
 
-    <table class="agenda" style="width:50%" align="center">
-        <colgroup>
-            <col width="5%" />
-            <col width="12%" />
-            <col width="20%" />
-            <col width="10%" />
-        </colgroup>
-        <thead>
-            <tr>
-                <th ><center>Place</center></th>
-                <th><center>ID</center></th>
-                <th><center>Timestamp</center></th>
-                <th><center>Score</center></th>
-            </tr>
-        </thead>
-        <tbody>
-            {% assign score_sorted = site.data.score | sort: 'finalScore' | reverse  %}
-            {% for ai in score_sorted  %}
+    <center>
+    <div class="table-container" style="width: 50%">
+        <table id="theScoreboard" class="display">
+            <colgroup>
+                <col width="5%" />
+                <col width="5%" />
+                <col width="12%" />
+                <col width="20%" />
+                <col width="0%" />
+                <col width="0%" />
+                <col width="0%" />
+                <col width="0%" />
+                <col width="0%" />
+                <col width="0%" />
+                <col width="0%" />
+
+            </colgroup>
+            <thead>
                 <tr>
-                    <td markdown="span"><center>{{ forloop.index}} </center></td>
-                    <td markdown="span"><center>{{ ai.id }} </center></td>
-                    <td markdown="span" ><center><a href="../scores/{{ai.timestamp}}"> {{ ai.timestamp }} </a></center></td>
-                    <td markdown="span"><center>{{ ai.finalScore }} </center></td>
+                    <th></th>
+                    <th><center>Place</center></th>
+                    <th><center>ID</center></th>
+                    <th><center>Score</center></th>
+                    <th style="display: none"><center>Scenario Name</center></th>
+                    <th style="display: none"><center>Time Elapsed</center></th>
+                    <th style="display: none"><center>Route Completed</center></th>
+                    <th style="display: none"><center>Collisions</center></th>
+                    <th style="display: none"><center>Wrong Lane</center></th>
+                    <th style="display: none"><center>Off Route</center></th>
+                    <th style="display: none"><center>Red Lights</center></th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                {% assign score_sorted = site.data.score | sort: 'finalScore_sort' | reverse  %}
+                {% for driver in score_sorted  %}
+
+                    <tr>
+                        <td class="details-control">
+                        <td ><center>{{ forloop.index}}</center></td>
+                        <td ><center>{{ driver.id }}</center></td>
+                        <td ><center>{{ driver.finalScore }}</center></td>
+                        <td style="display: none">{{ driver.scenario }}</td>
+                        <td style="display: none">{{ driver.timeElapsed }}</td>
+                        <td style="display: none">{{ driver.routeCompleted }}</td>
+                        <td style="display: none">{{ driver.collisions }}</td>
+                        <td style="display: none">{{ driver.wrongLane }}</td>
+                        <td style="display: none">{{ driver.offRoute }}</td>
+                        <td style="display: none">{{ driver.redLights }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+    </center>>
+
 
 </html>
