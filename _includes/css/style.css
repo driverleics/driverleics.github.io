@@ -376,7 +376,7 @@ header .intro-text .intro-heading {
     line-height: 40px;
 }
 
-@media(min-width:768px) {    
+@media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
@@ -395,7 +395,7 @@ header .intro-text .intro-heading {
 	font-size: 40px;
 	line-height: 40px;
     }
-    
+
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
@@ -950,7 +950,7 @@ body {
 
 .speakers-link {
     width: 200px;
-    background-position: center center;    
+    background-position: center center;
     max-width:200px;
 }
 
@@ -1025,4 +1025,8 @@ body {
   margin: auto;
   padding: 10px;
   text-align: center;
+}
+
+.portfolio-link {
+  text-decoration: underline;
 }
