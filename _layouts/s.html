@@ -5,6 +5,18 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
+    <style type="text/css">
+      /*INCLUDE MAIN CSS FILE*/
+      {% capture criticalcss %}
+      {% include /css/critical.scss %}
+      {% endcapture %}
+      {{ criticalcss | scssify }}
+    </style>
+
+    {% include /data/js.html %}
+    {% include /data/head.html %}
+
+
     <style>
       td.details-control {
         background: url('../css/style/img/scoreboard_details_open.png') no-repeat center center;
@@ -21,25 +33,14 @@
     <meta name="twitter:creator" content="@DriverLeics" />
     <meta name="twitter:title" content="DriverLeics @ University of Leicester" />
     <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="https://driverleics.github.io/activities/carla_simulator.jpg" />
+    <meta name="twitter:image" content="https://driverleics.github.io/team/carla_simulator.jpg" />
     <meta property="og:url" content="http://driverleics.github.io" />
     <meta property="og:title" content="DriverLeics" />
     <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:image" content="https://driverleics.github.io/activities/carla_simulator.jpg" />
+    <meta property="og:image" content="https://driverleics.github.io/team/carla_simulator.jpg" />
 
 
   </head>>
-
-  <style type="text/css">
-    /*INCLUDE MAIN CSS FILE*/
-    {% capture criticalcss %}
-      {% include /css/critical.scss %}
-    {% endcapture %}
-    {{ criticalcss | scssify }}
-  </style>
-  
-  {% include /data/js.html %}
-  {% include /data/head.html %}
 
   <body>
 
