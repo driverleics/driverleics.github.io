@@ -1,2 +1,4 @@
 id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLeft,routeCompleted,finalScore,finalScore_sort
 281640,Town03GasStation,0,2,303,0,0,69,100,-24440,0000224440
+281652,Town07Farm,0,2,354,0,0,68,100,-29679,0000229679
+281653,Town03GasStation,1,2,525,0,0,65,100,-52058,0000252058
