@@ -1,0 +1,3 @@
+id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLeft,routeCompleted,finalScore,finalScore_sort
+301555,Town03TrainTrack,2,1,134,0,0,49,100,-19006,0000219006301612,Town03GasStation,0,2,178,0,0,76,100,-11219,0000211219
+301615,Town03TrainTrack,2,2,263,0,0,60,100,-31388,0000231388
