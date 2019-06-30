@@ -4,3 +4,4 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 301621,Town03TrainTrack,2,4,23,0,0,32,100,-11147,0000211147
 301628,Town04ParkingLot,1,1,0,0,0,24,100,-3156,0000203156
 301633,Town04ParkingLot,0,19,0,-2,0,0,13,-17800,0000217800
+301636,Town07Farm,1,2,550,-1,0,0,58,-65001,0000265001
