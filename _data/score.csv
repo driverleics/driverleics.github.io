@@ -7,3 +7,5 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 301636,Town07Farm,1,2,550,-1,0,0,58,-65001,0000265001
 301638,Town04ParkingLot,2,6,0,0,0,49,100,-8156,0000208156
 301646,Town03TrainTrack,3,3,0,0,0,0,88,-17703,0000217703
+301657,Town07Farm,1,2,0,-1,0,17,100,-4118,0000204118
+301701,Town07Farm,0,0,0,0,0,47,100,4665,0000195335
