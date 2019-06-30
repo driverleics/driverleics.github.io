@@ -1,2 +1,3 @@
 id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLeft,routeCompleted,finalScore,finalScore_sort
-281720,Town07Farm,0,3,547,0,0,81,100,-48136,0000248136
+301214,Town04ParkingLot,1,1,138,0,0,16,100,-17718,0000217718
+301434,Town04ParkingLot,0,1,134,0,0,86,100,-5382,0000205382
