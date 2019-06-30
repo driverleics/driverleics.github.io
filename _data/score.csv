@@ -1,0 +1,4 @@
+id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLeft,routeCompleted,finalScore,finalScore_sort
+301214,Town04ParkingLot,1,1,138,0,0,16,100,-17718,0000217718
+301434,Town04ParkingLot,0,1,134,0,0,86,100,-5382,0000205382
+301455,Town03GasStation,1,5,133,0,0,56,100,-15232,0000215232
