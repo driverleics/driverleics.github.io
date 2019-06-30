@@ -157,7 +157,7 @@
           if (!(params.get('i') === '')) {
 
             idValue = String(params.get('i')).trim()
-            place = 0
+            place = -1
 
             // Find the correct Page
             for (i = 0; i < table.column(2).data().length ; i++) {
@@ -166,6 +166,11 @@
               if (str === idValue ) {
                 place = i;
               }
+            }
+
+            if (place === -1) {
+              place = 0;
+              alert("ID not found. Please try again soon.");
             }
 
             page_to_display = Math.floor( place / initialEntries );
