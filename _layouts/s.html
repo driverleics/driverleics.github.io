@@ -54,7 +54,6 @@
       function format ( d ) {
         // `d` is the data the row
         urlToShare = "https://driverleics.github.io/s?i="+String(d[2])
-        console.log(urlToShare)
         return  '<center>' +
                 '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
                 '<tr>'+
@@ -161,15 +160,14 @@
 
             // Find the correct Page
             for (i = 0; i < table.column(2).data().length ; i++) {
-              str = String(table.column(2).data()[i]);
-              str = str.substring(str.indexOf(">")+1, str.lastIndexOf("<")).trim();
+              str = String(table.column(2).data()[i]).trim();
               if (str === idValue ) {
                 place = i;
               }
             }
 
             if (place === -1) {
-              place = 0;
+              place = 1;
               alert("We are still working on updating your score.\n\tPlease try again in a few minutes.");
             }
 
