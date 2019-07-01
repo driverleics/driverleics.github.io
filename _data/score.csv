@@ -13,3 +13,4 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 010834,Town03GasStation,7,1,0,0,0,26,100,-32918,0000232918
 010850,Town03TrainTrack,1,13,11,0,0,17,100,-10906,0000210906
 010859,Town03GasStation,0,1,0,0,0,60,100,5491,0000194509
+010922,Town03GasStation,3,7,254,0,0,48,100,-39119,0000239119
