@@ -341,3 +341,5 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 022148,Town07Farm,4,4,579,0,0,42,100,-75798,0000275798
 022151,Town03GasStation,0,1,0,0,0,45,100,3931,0000196069
 022158,Town03TrainTrack,1,8,1357,0,0,0,100,-144701,0000344701
+030950,Town03GasStation,0,0,0,0,0,41,100,4003,0000195997
+030954,Town03TrainTrack,0,1,0,0,0,35,100,2931,0000197069
