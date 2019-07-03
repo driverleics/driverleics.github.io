@@ -500,3 +500,4 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 032153,Town03GasStation,1,0,0,0,0,0,93,-5701,0000205701
 032157,Town03TrainTrack,1,1,0,0,0,21,100,-3436,0000203436
 032202,Town04ParkingLot,2,6,2443,0,0,0,100,-257301,0000457301
+032206,Town03GasStation,6,5,46,0,0,0,93,-37800,0000237800
