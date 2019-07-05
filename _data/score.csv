@@ -662,3 +662,6 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 042148,Town04ParkingLot,0,2,0,0,0,0,21,-8901,0000208901
 042151,Town07Farm,0,0,0,-2,0,0,100,398,0000199602
 042200,Town03GasStation,0,0,0,0,0,35,100,3420,0000196580
+050942,Town03GasStation,13,4,0,0,0,0,69,-70100,0000270100
+050945,Town03TrainTrack,3,3,79,0,0,9,100,-23559,0000223559
+050948,Town04ParkingLot,0,0,0,0,0,24,100,2371,0000197629
