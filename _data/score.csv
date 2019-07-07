@@ -1035,3 +1035,4 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 071324,Town03TrainTrack,0,24,996,0,0,0,20,-119602,0000319602
 071328,Town04ParkingLot,0,23,347,0,0,0,32,-53001,0000253001
 071331,Town07Farm,0,54,3626,-3,0,0,18,-397200,0000597200
+071334,Town03GasStation,0,5,480,0,0,0,100,-50500,0000250500
