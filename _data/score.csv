@@ -1124,3 +1124,4 @@ id,scenario,humanCollisions,staticCollisions,offRoute,wrongLane,redLights,timeLe
 071752,Town04ParkingLot,0,17,0,0,0,0,19,-16600,0000216600
 071755,Town07Farm,0,7,956,0,0,0,100,-99101,0000299101
 071758,Town03GasStation,7,4,883,0,0,14,100,-123940,0000323940
+161510,Town03GasStation,0,1,238,0,0,65,100,-17890,0000217890
