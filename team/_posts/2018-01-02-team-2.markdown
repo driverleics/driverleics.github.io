@@ -1,7 +1,7 @@
 ---
 title: Dr
 name: Rayna Dimitrova
-subtitle: Lecturer
+subtitle: Researcher at CISPA, Germany
 layout: default
 img: rayna.jpg
 thumbnail: rayna.jpg
