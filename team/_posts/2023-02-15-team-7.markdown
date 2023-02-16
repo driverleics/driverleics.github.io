@@ -1,0 +1,12 @@
+---
+title: Dr
+name: Daniel Z. Hao
+subtitle: Lecturer (AP) / Team Lead (Since Nov 2022)
+layout: default
+img: dh.jpg
+thumbnail: dh.jpg
+alt: Daniel Hao
+website: https://le.ac.uk/
+description: Blah blah blah
+weight: 1
+---

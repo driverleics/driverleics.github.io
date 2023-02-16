@@ -1,7 +1,7 @@
 ---
 title: Prof
 name: Mohammad Mousavi
-subtitle: Professor / Co-Lead
+subtitle: Professor / Previous Co-Lead
 layout: default
 img: mohammad.jpg
 thumbnail: mohammad.jpg

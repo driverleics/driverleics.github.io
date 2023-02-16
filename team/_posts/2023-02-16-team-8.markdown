@@ -1,0 +1,12 @@
+---
+title: Dr
+name: Bo Yuan
+subtitle: Lecturer (AP) 
+layout: default
+img: bo.jpg
+thumbnail: bo.jpg
+alt: Bo Yuan
+website: https://le.ac.uk/people/bo-yuan
+description: Blah blah blah
+weight: 2
+---

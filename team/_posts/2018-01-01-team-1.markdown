@@ -1,8 +1,8 @@
 ---
-title: Dr
+title: Prof
 name: Jan Oliver Ringert
-subtitle: Lecturer / Team Leader
-layout: default
+subtitle: Professor / Previous Team Lead
+layout: defaults
 img: jan.jpg
 thumbnail: jan.jpg
 alt: Jan Ringert
