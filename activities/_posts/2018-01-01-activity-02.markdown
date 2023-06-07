@@ -1,5 +1,6 @@
 ---
 title: Basic, Explainable AI Components
+date: 2018-1-1
 name: activity-02
 layout: default
 img: reynaholding.jpg

@@ -11,7 +11,7 @@
       <!-- Current Academics -->
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h3 class="section-heading">Current Academics</h3>
+          <h3 class="section-heading">Current Academics and Lead Student</h3>
         </div>
       </div>
       <div class="row">
@@ -20,7 +20,7 @@
             <div class="col-md-4 col-sm-6">
               <center>
                 <a href="{{ post.website }}" class="portfolio-link" data-toggle="modal">
-                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" alt="">
+                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" style="transform: scale(0.9); margin-bottom: 0;" alt="">
                   {{ post.name }}
                 </a>
                 <br>{{ post.subtitle }}
@@ -42,7 +42,8 @@
             <div class="col-md-4 col-sm-6">
               <center>
                 <a href="{{ post.website }}" class="portfolio-link" data-toggle="modal">
-                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" alt="">
+                  <!-- Scale and Remove Margin the Previous Team Members-->
+                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" style="transform: scale(0.75); margin-bottom: 0;" alt="">
                   {{ post.name }}
                 </a>
                 <br>{{ post.subtitle }}
@@ -52,22 +53,62 @@
         {% endfor %}
       </div>
   
-      <!-- Students -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-12 text-center">
           <h3 class="section-heading">Students</h3>
           <h6>ordered alphabetically by lastname, note this list may not be exhaustive</h6>
         </div>
       </div>
       {% for member in site.data.students %}
-        <div class="row pc">
-          <div class="col-md-6 col-sm-6 pc-name">
-            {{ member.Name }} {{ member.Surname }}
-          </div>
-          <div class="col-md-6 col-sm-6 pc-affiliation">
-            {{member.Degree}}
-          </div>
+      <div class="row pc">
+        <div class="col-md-6 col-sm-6 pc-name">
+          {{ member.Name }} {{ member.Surname }}
         </div>
+        <div class="col-md-6 col-sm-6 pc-affiliation">
+          {{member.Degree}}
+        </div>
+      </div>
       {% endfor %}
-    </div>
+      </div> -->
+<!-- Students -->
+<!-- Students -->
+<div class="row">
+  <div class="col-lg-12 text-center">
+      <h3 class="section-heading">Alumni</h3>
+      <h6>Ordered alphabetically by lastname, note this list may not be exhaustive</h6>
+  </div>
+</div>
+
+{% assign split = site.data.students | size | divided_by:2.0 | ceil %}
+{% assign part1 = site.data.students | slice: 0, split %}
+{% assign part2 = site.data.students | slice: split, split %}
+
+<div class="row">
+  <div class="col-md-6 text-center">
+      {% for member in part1 %}
+      <div class="row student-entry">
+          <div class="col-md-6 text-left pc-name">
+              {{ member.Name }} {{ member.Surname }}
+          </div>
+          <div class="col-md-6 text-left pc-affiliation">
+              {{ member.Degree }}
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+
+  <div class="col-md-6 text-center">
+      {% for member in part2 %}
+      <div class="row student-entry">
+          <div class="col-md-6 text-left pc-name">
+              {{ member.Name }} {{ member.Surname }}
+          </div>
+          <div class="col-md-6 text-left pc-affiliation">
+              {{ member.Degree }}
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+
   </section>

@@ -1,0 +1,13 @@
+---
+title: AI Object Detection - Seeing Through the Lens of Artificial Intelligence
+date: 2023-06-07
+name: activity-06
+layout: default
+img: ai_object_detection.png
+thumbnail: ai_object_detection.png
+alt: ne3
+website:
+topic: Role
+abstract: >
+ Dive into the world of AI and get hands-on experience in identifying objects through the eyes of an artificial intelligence model. Learn how machines 'see' and 'understand' objects in their environment.
+---

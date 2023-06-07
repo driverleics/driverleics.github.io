@@ -1,0 +1,11 @@
+---
+title: Dr
+name: Neslihan Suzen
+subtitle: Lecturer (AP)
+layout: default
+img: nes.jpeg
+thumbnail: nes.jpeg
+alt: Neslihan Suzen
+website: https://le.ac.uk/computing-and-mathematical-sciences/people/academic
+description: Blah blah blah
+---

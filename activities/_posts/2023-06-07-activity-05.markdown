@@ -1,0 +1,13 @@
+---
+title: RoboDog in Action - An Interactive Experience
+date: 2023-06-07
+name: activity-05
+layout: default
+img: robotdog_int.png
+thumbnail: robotdog_int.png
+alt: ne2
+website:
+topic: Role
+abstract: >
+ Step into the world of robotic canines and gain firsthand experience in programming and controlling their movements. Understand the complex mechanics that bring these remarkable machines to life.
+---

@@ -1,0 +1,36 @@
+<!-- BrightSpark STEM Fair 2023 Section -->
+<section id="stemFair2023" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">BrightSpark STEM Fair 2023</h2>
+                <div class="col-lg-12 text-justify">
+                    <p>Join us, DriverLeics Team, at the Bright Sparks STEM Fair on 17th June 2023 for an unforgettable dive into the world of AI and robotics. Experience the fascinating operation of an advanced robotic dog, get hands-on with AI object detection, and demystify the mechanics of autonomous vehicles using a 1:8 scale model. This is a unique opportunity to step into the future of technology and see first-hand how these exciting fields are transforming our world. Be there, be curious, and let's discover the magic of technology together!
+                    </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="../css/style/img/activities/brightspark2023poster.png" class="img-responsive img-centered" width="80%" alt="Description of Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4 class="section-subheading">Activities</h4>
+            {% for activity in site.categories.activities %}
+            <!-- log the value of date to help debugging -->
+            <!-- <p>{{ activity.date | date: "%Y-%m-%d" }}</p> -->
+            {% assign activity_date = activity.date | date: "%Y-%m-%d" | strip %} <!--The strip filter removes any leading and trailing whitespaces from the string.-->
+            {% if activity_date == '2023-06-07' %}
+            <div class="col-md-4 col-sm-4">
+                <!--<div class="col-md-4 col-sm-6">-->
+                <img src="../css/style/img/activities/{{ activity.img }}" class="img-responsive img-centered"
+                    alt="">
+                <h5>{{ activity.title }}</h5>
+                <p class="text-muted">{{ activity.abstract }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

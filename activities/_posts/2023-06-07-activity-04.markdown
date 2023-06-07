@@ -1,0 +1,13 @@
+---
+title: Autonomous Vehicles Demystified - Journey into Self-Driving Technology
+date: 2023-06-07
+name: activity-04
+layout: default
+img: car_display_open.jpg
+thumbnail: car_display_open.jpg
+alt: ne1
+website:
+topic: Role
+abstract: >
+ Step behind the scenes of the autonomous vehicle revolution. Learn how these self-driving machines navigate complex environments and make decisions in real time, and even try your hand at basic autonomous driving algorithms.
+---

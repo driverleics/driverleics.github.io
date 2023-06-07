@@ -1,0 +1,11 @@
+---
+title:
+name: Abdulqader A.M. Dhafer
+subtitle: CS Student
+layout: default
+img: abdul.jpg
+thumbnail: abdul.jpg
+alt: Abdulqader Dhafer
+website: https://le.ac.uk/computing-and-mathematical-sciences/
+description: Blah blah blah
+---
