@@ -1,7 +1,7 @@
 ---
 title: Dr
 name: Daniel Z. Hao
-subtitle: Lecturer (AP) / Team Lead (Since Nov 2022)
+subtitle: Lecturer / Team Lead (Since Nov 2022)
 layout: default
 img: dh.jpg
 thumbnail: dh.jpg

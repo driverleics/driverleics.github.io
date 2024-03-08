@@ -1,7 +1,7 @@
 ---
 title: Dr
 name: Genovefa Kefalidou
-subtitle: Lecturer (AP)
+subtitle: Lecturer
 layout: default
 img: genovefa.jpg
 thumbnail: genovefa.jpg

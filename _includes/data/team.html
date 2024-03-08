@@ -39,11 +39,11 @@
       <div class="row">
         {% for post in site.categories.team reversed %}
           {% if post.path contains '/2018' %}
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-7" style="min-height: 300px;">
               <center>
                 <a href="{{ post.website }}" class="portfolio-link" data-toggle="modal">
                   <!-- Scale and Remove Margin the Previous Team Members-->
-                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" style="transform: scale(0.75); margin-bottom: 0;" alt="">
+                  <img src="../css/style/img/team/{{ post.img }}" class="img-responsive img-centered img-org" style="transform: scale(0.7); margin-bottom:20px;" alt="">
                   {{ post.name }}
                 </a>
                 <br>{{ post.subtitle }}
